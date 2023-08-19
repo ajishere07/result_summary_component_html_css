@@ -12,12 +12,17 @@ body{
 }
 
 .main{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    width: 620px;
     background-color: hsl(0, 0%, 100%);
+    display: flex;
 }
 
 
 /* score section */
 .main__scoreSection{
+   width: 80%;
    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
    padding: 30px;
    border-radius: 30px;
@@ -77,5 +82,119 @@ body{
 
 /* score section */
 
+/* summary section */
+
+.main__summarySection{
+    padding: 30px;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 100%);  
+    width: 100%; 
+}
+
+ul{
+    list-style: none;
+}
+
+.content__container{
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__summarySection > h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.content__containerIMGNAME{
+   
+    display: flex;
+    align-items: center;
+}
+
+.content__containerIMGNAME > img{
+  margin-right: 16px;
+}
+
+#reaction{
+    background-color: hsla(0, 100%, 67%,0.1);
+}
+
+#reaction_text{
+    color: #ff5555;
+}
+
+#memory{
+    background-color: hsla(39, 100%, 56%,0.1);
+}
+
+#memory_text{
+    color: #FFBB36;
+}
+#verbal{
+    background-color: hsla(166, 100%, 37%,0.1);
+}
+#verbal_text{
+    color: #0CBE94;
+}
+#visual{
+    background-color: hsla(234, 85%, 45%,0.1);
+}
+#visual_text{
+    color: #1B2ED8;
+}
+
+.content__containerScore{
+    margin-right: 10px;
+    font-weight: 700;
+}
 
 
+.outOfScore{
+    color: hsl(0, 0%, 50%);
+}
+
+
+.main__summarySectionButton{
+    margin-top: 30px;
+    color: hsl(0, 0%, 100%);
+width: 100%;
+border-radius: 30px;
+height: 45px;
+background-color: hsl(224, 30%, 27%);
+border: none;
+}
+/* summary section */
+
+
+
+/* // mobile responsive max width 600 */ 
+
+@media only screen and (max-width:600px) {
+
+    .main{
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main__scoreSection{
+        width: 100%;
+        background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        padding: 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+     }
+     .main__summarySection{
+        padding: 30px;
+   
+        background-color: hsl(0, 0%, 100%);  
+        width: 100%; 
+    }
+}
